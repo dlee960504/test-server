@@ -6,6 +6,7 @@
     "start": "nodemon ./bin/www",
     "lint": "node_modules/.bin/eslint app.js"
   },
+
   "husky":{
     "hooks": {
       "pre-commit": "npm run lint"
