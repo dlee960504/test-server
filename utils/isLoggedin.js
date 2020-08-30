@@ -5,6 +5,7 @@ require('dotenv').config();
 
 const isLoggedin = async (req, res, next) => {
     const token = req.headers.authorization;
+    // const token = req.cookies.token;
     try{
         const payload = jwt.verify(token, process.env.JWT_SECRET);
         const userId = payload.id;
